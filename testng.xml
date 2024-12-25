@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+    <parameter name="browser" value="chrome"></parameter>
+    <parameter name="url" value="https://www.saucedemo.com/"></parameter>
+    <test verbose="2" preserve-order="true" name="/Users/vijayakepati/Documents/Sujatha Selenium/Maven/src/main/java/TestNg/TestNgClass2.java">
+        <classes><class name="TestNg.TestNgClass2">
+            <methods></methods></class>
+        </classes>
+    </test></suite>
