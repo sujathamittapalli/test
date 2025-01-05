@@ -17,11 +17,15 @@ public class TestNgClass2 extends TestNgClass1{
 
     @Test
     public void TestCase1() {
+        //Navigate to url saucedemo.com
         driver.navigate().to("https://www.saucedemo.com/");
+        //Enter the username = user-name
     WebElement userName= driver.findElement(By.xpath("//input[@id='user-name']"));
     userName.sendKeys("standard_user");
+    //Enter thr password = secret_sauce
     WebElement password= driver.findElement(By.xpath("//input[@id='password']"));
     password.sendKeys("secret_sauce");
+    //After entering into both username and password click on the button
     WebElement button = driver.findElement(By.xpath("//input[@id='login-button']"));
     button.click();
     WebElement title = driver.findElement(By.xpath("//div[@class='app_logo']"));
@@ -37,6 +41,7 @@ public class TestNgClass2 extends TestNgClass1{
 
 
         WebElement item= driver.findElement(By.xpath("//a[@id='item_4_img_link']"));
+        //check whether logo is displayed or not
         boolean isLogoDisplayed = item.isDisplayed();
         Assert.assertTrue(isLogoDisplayed);
 
