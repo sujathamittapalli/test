@@ -6,7 +6,7 @@ public class TestNgClass1 {
      @BeforeSuite
     public void startReporting(){
         System.out.println("Reporting process started");
-        System.out.println();
+        System.out.println("----");
     }
     @AfterSuite
     public void stopReporting(){
